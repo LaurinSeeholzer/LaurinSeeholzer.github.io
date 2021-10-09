@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurin Seeholzer</title>
+    <!-- bootstrap-css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- feathericons.com -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="jquery.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+        body {
+            font-family: Share Tech Mono;
+            background-color: black;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #cccccc;
+        }
+        
+        .col-md {
+            text-align: center;
+        }
+        
+        @media only screen and (min-width: 576px) and (orientation: landscape) {
+            .col-md>h1 {
+                font-size: 3vw !important;
+            }
+            .txt {
+                margin-left: 0px;
+            }
+            .pic1 {
+                display: block !important;
+            }
+            .idk {
+                height: 200px!important;
+            }
+        }
+        
+        .col-md>h1 {
+            display: inline;
+            font-size: 5vw;
+            color: #ffffff;
+        }
+        
+        #header {
+            height: 10vh;
+        }
+        
+        .pic1 {
+            display: none;
+        }
+        
+        #landing {
+            padding-top: 25vh;
+            height: 100vh
+        }
+        
+        .icon {
+            display: inline;
+            height: 7vh;
+            width: 7vh;
+            margin-right: 20px;
+            color: #ffffff!important;
+        }
+        
+        .iconlable {
+            display: inline;
+            color: #ffffff!important;
+            text-decoration: none!important;
+        }
+        
+        .txt {
+            margin-left: 10px;
+        }
+        
+        .projects {
+            display: flex;
+            justify-content: center;
+        }
+        /* For hiding scoll bar */
+        
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .project {
+            margin: 10px;
+            width: 18rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        #contact {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .about,
+        .contact {
+            margin-bottom: 50px;
+        }
+        
+        .paragraph {
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body id="model">
+    <div class="container-fluid" id="header">
+        <p style="position: absolute; top: 20px; left: 20px;">Portfolio</p>
+        <a href="https://github.com/LaurinSeeholzer" style="flex: 1"><i data-feather="github" color="#ffffff" style="position: absolute; top: 20px; right: 20px;"></i></a>
+    </div>
+    <div class="container-md" id="landing">
+        <div class="row">
+            <div class="col-md">
+                <h1>$ L a u r i n</h1>
+                <h1 style="color: black; opacity: 0.0;">___________</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <h1 style="color: black;  opacity: 0.0;">_______</h1>
+                <h1>S e e h o l z e r</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-md about">
+        <div class="row">
+            <div class="col">
+                <h2 style="margin-left: 10px;" id="about-title"></h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <p class="paragraph" id="paragraph-about">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-md about">
+        <div class="row">
+            <div class="col-sm txt">
+                <h2 style="margin-left: 10px;">Top_projects()</h2>
+                <br>
+            </div>
+        </div>
+
+        <div class="row projects">
+
+
+            <div class="project">
+                <img class="project-image" src="memegeneration-api.png">
+                <a href="https://github.com/LaurinSeeholzer/meme-generator-api">
+                    <h5 class="project-title">> meme-generator</h5>
+                </a>
+            </div>
+            <div class="project">
+                <img class="project-image" src="brachistochrone-problem.png">
+                <a href="https://github.com/LaurinSeeholzer/the-brachistochrone">
+                    <h5 class="project-title">> brachistochrone-problem</h5>
+                </a>
+            </div>
+            <div class="project">
+                <img class="project-image" src="linear-regression.png">
+                <a href="https://github.com/LaurinSeeholzer/linear-regression">
+                    <h5 class="project-title">> linear-regresseion</h5>
+                </a>
+            </div>
+            <div class="project">
+                <img class="project-image" src="keplersche-gesetze.png">
+                <a href="https://github.com/LaurinSeeholzer/keplersche-gesetze">
+                    <h5 class="project-title">> keplersche-gesetze</h5>
+                </a>
+            </div>
+            <div class="project">
+                <img class="project-image" src="sorting-algorithms.png">
+                <a href="https://github.com/LaurinSeeholzer/sorting-algorithms">
+                    <h5 class="project-title">> sorting-algorithms</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-md contact">
+        <div class="row">
+            <div class="col">
+                <h2 style="margin-left: 10px;" id="contact-title"></h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10 paragraph" id="paragraph-contact">
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="0.5" d="M0,0L34.3,16C68.6,32,137,64,206,69.3C274.3,75,343,53,411,74.7C480,96,549,160,617,154.7C685.7,149,754,75,823,58.7C891.4,43,960,85,1029,90.7C1097.1,96,1166,64,1234,48C1302.9,32,1371,32,1406,32L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                <path fill="#ffffff" fill-opacity="0.7" d="M0,224L24,229.3C48,235,96,245,144,240C192,235,240,213,288,186.7C336,160,384,128,432,101.3C480,75,528,53,576,80C624,107,672,181,720,192C768,203,816,149,864,138.7C912,128,960,160,1008,149.3C1056,139,1104,85,1152,96C1200,107,1248,181,1296,181.3C1344,181,1392,107,1416,69.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+                <path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col" style="text-align: center; padding: 20px">Laurin Seeholzer</div>
+        </div>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script>
+        var about_i = 0;
+        var about_title_i = 0;
+        var about_title_text = "about_me()"
+        var about_text = "I'm a 15 years old student <br> and hobbyist programmer from Switzerland. In my spare time I often deal with science and technology. Since I started learning my first programming language about three years ago, programming has become an important part of mylife."; /* The text */
+        var contact_i = 0;
+        var contact_title_i = 0;
+        var contact_title_text = "contact()"
+        var contact_text = "<h3> hello</h3>"
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+        const sleep = (milliseconds) => {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+        }
+        var instagram_icon = document.createElement("a")
+        instagram_icon.href = "https://instagram.com"
+        instagram_icon.innerHTML = '<i data-feather="instagram" color="#ffffff" style="height: 30px; width: 30px"></i>'
+        var github_icon = document.createElement("a")
+        github_icon.href = "https://github.com/LaurinSeeholzer"
+        github_icon.innerHTML = '<i data-feather="github" color="#ffffff" style="height: 30px; width: 30px"></i>'
+        var mail_icon = document.createElement("a")
+        mail_icon.href = "mailto:Laurin_Seeholzer@outlook.com"
+        mail_icon.innerHTML = '<i data-feather="at-sign" color="#ffffff" style="height: 30px; width: 30px"></i>'
+        var br = document.createElement("br")
+        var contact_data = [instagram_icon, " ", "i", "n", "s", "t", "a", "g", "r", "a", "m", br, br, github_icon, " ", "g", "i", "t", "h", "u", "b", br, br, mail_icon, " ", "e", "-", "m", "a", "i", "l", ]
+        var about_title_loaded = false;
+        var about_loaded = false;
+        var contact_title_loaded = false;
+        var contact_loaded = false;
+        const contactAnimation = async() => {
+            if (!contact_title_loaded) {
+                document.getElementById("contact-title").innerHTML = document.getElementById("contact-title").innerHTML.slice(0, -1);
+                if (contact_title_i < contact_title_text.length) {
+                    document.getElementById("contact-title").innerHTML += (contact_title_text.charAt(contact_title_i) + "|");
+                    contact_title_i++;
+                    await sleep(100);
+                    contactAnimation();
+                } else {
+                    contact_title_loaded = true;
+                    await sleep(5000)
+                }
+            }
+            if (!contact_loaded && contact_title_loaded) {
+                for (let i = 0; i < contact_data.length; i++) {
+                    var obj = contact_data[i];
+                    console.log(typeof obj)
+                    if (typeof obj != "string") {
+                        document.getElementById("paragraph-contact").appendChild(obj);
+                        feather.replace()
+                    } else {
+                        document.getElementById("paragraph-contact").innerHTML += obj;
+                    }
+                    document.getElementById("paragraph-contact").innerHTML += "|";
+                    await sleep(50)
+                    document.getElementById("paragraph-contact").innerHTML = document.getElementById("paragraph-contact").innerHTML.slice(0, -1);
+                }
+                contact_loaded = true;
+            }
+        }
+        const aboutAnimation = async() => {
+            if (!about_title_loaded) {
+                document.getElementById("about-title").innerHTML = document.getElementById("about-title").innerHTML.slice(0, -1);
+                if (about_title_i < about_title_text.length) {
+                    document.getElementById("about-title").innerHTML += (about_title_text.charAt(about_title_i) + "|");
+                    about_title_i++;
+                    await sleep(100);
+                    aboutAnimation();
+                } else {
+                    about_title_loaded = true;
+                    await sleep(5000)
+                }
+            }
+            if (!about_loaded && about_title_loaded) {
+                if (about_i < about_text.length) {
+                    document.getElementById("paragraph-about").innerHTML += (about_text.charAt(about_i) + "|");
+                    about_i++;
+                    await sleep(40);
+                    document.getElementById("paragraph-about").innerHTML = document.getElementById("paragraph-about").innerHTML.slice(0, -1);
+                    aboutAnimation();
+                } else if (about_i === about_text.length) {
+                    about_loaded = true;
+                    contactAnimation();
+                }
+            }
+
+
+            if (about_loaded && about_title_loaded) {
+
+            }
+        }
+        $(window).scroll(function() {
+            if ($(window).scrollTop() + $(window).height() > document.getElementById("about-title").offsetTop) {
+                $(window).unbind('scroll');
+                aboutAnimation();
+            }
+            if ($(window).scrollTop() + $(window).height() > document.getElementById("contact-title").offsetTop) {
+                $(window).unbind('scroll');
+                contactAnimation();
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#landing",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.0,
+            scaleMobile: 0.30,
+            color: 0xcccccc,
+            backgroundColor: 0x0,
+            points: 5.00,
+            spacing: 10.00,
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
