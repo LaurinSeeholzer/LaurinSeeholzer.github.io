@@ -289,11 +289,11 @@
         }
         const aboutAnimation = async() => {
             if (!about_title_loaded) {
-                document.getElementById("about-title").innerHTML = document.getElementById("about-title").innerHTML.slice(0, -1);
                 if (about_title_i < about_title_text.length) {
                     document.getElementById("about-title").innerHTML += (about_title_text.charAt(about_title_i) + "|");
                     about_title_i++;
                     await sleep(100);
+                    document.getElementById("about-title").innerHTML = document.getElementById("about-title").innerHTML.slice(0, -1);
                     aboutAnimation();
                 } else {
                     about_title_loaded = true;
