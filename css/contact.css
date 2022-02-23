@@ -1,0 +1,86 @@
+#contact-section .container-fluid {
+    background-color: #f2f2f2;
+    padding-bottom: 100px;
+}
+
+#contact-section {
+    margin-top: calc(10vw + 100px);
+}
+
+#contact-title {
+    padding-left: 10vw;
+    font-family: "SF Pro Bold";
+    font-size: calc(2.5vw + 25px);
+    margin-bottom: 50px;
+}
+
+.contact-option-icon {
+    height: calc(1.2rem + 0.3vw);
+    width: calc(1.2rem + 0.3vw);
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.contact-option {
+    animation-name: animate_out;
+    animation-duration: 0.8s;
+    font-family: "SF Pro Bold";
+    font-size: calc(1.2rem + 0.3vw);
+    width: calc(100%- 20vw);
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 10vw;
+    border-radius: 10px;
+    margin-right: 10vw;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-option:hover {
+    animation-name: animate_in;
+    animation-duration: 0.8s;
+    background-color: #000;
+    color: #ffffff!important;
+}
+
+@keyframes animate_in {
+    from {background-color: #f2f2f2; color: #000!important;}
+    to {background-color: #000; color: #fff!important;}
+}
+
+@keyframes animate_out {
+    from {background-color: #000; color: #fff!important;}
+    to {background-color: #f2f2f2; color: #000!important;}
+}
+  
+
+.col {
+    padding: 0px;
+}
+
+#contact-img {
+    width: calc(100% - 20vw);
+    margin-left: 10vw;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+@media screen and (max-width: 774px) {
+    .contact-option, .contact-option:hover {
+        animation-name: none;
+        background-color: #000;
+        color: #ffffff!important;
+    }
+
+    #contact-img-div {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,84 @@
+#hero-section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: calc(8.5vw + 100px);
+    padding-bottom: calc(8.5vw + 100px);;
+}
+
+#hero-heading {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#hero-heading-title {
+    font-family: "SF Pro Bold";
+    font-size: calc(3vw + 20px);
+    color: #000;
+}
+
+#hero-heading-subtitle {
+    font-family: "SF Pro Medium";
+    font-size: calc(2vw + 10px);
+    color: #000;
+}
+
+#hero-action {
+    margin-top: 50px;
+}
+
+.hero-action-a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#hero-action-button-startproject {
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    padding-right: 15px;
+    font-size: calc(1.2rem + 0.3vw);
+    font-family: "SF Pro Medium"
+}
+
+#hero-action-button-startproject svg {
+    height: calc(1.2rem + 0.3vw);
+    width: calc(1.2rem + 0.3vw);
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#hero-action-button-contact {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border: 2px solid #000;
+    padding: 3px;
+    padding-left: calc(1vw + 20px);
+    padding-right: calc(1vw + 20px);
+    font-size: calc(1.2rem + 0.3vw);
+    font-family: "SF Pro Medium"
+}
+
+#hero-svg {
+    background-image: url(../images/hero.svg);
+    background-size:  auto 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 774px) {
+    #hero-svg {
+        min-width: calc(80%);
+        min-height: 40vh;
+        background-image: url(../images/hero.svg);
+        background-size:  auto 100%;
+        background-repeat: no-repeat;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+    #hero-heading {
+        padding-right: 10vw;
+    }
+}

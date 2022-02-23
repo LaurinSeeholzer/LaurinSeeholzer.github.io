@@ -1,0 +1,43 @@
+#hello-container {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#hello-img {
+    width: calc(100% - 20vw);
+    margin-left: 10vw;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hello-title {
+    font-family: "SF Pro Bold";
+    font-size: calc(2.5vw + 25px);;
+}
+
+#hello-text {
+    font-family: "SF Pro Medium";
+    font-size: calc(1.2rem + 0.3vw);
+}
+
+#hello-content {
+    padding-right: 10vw;
+}
+
+@media screen and (max-width: 774px) {
+    #hello-img-div {
+        display: none;
+    }
+
+    #hello-content {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+#hello-text a {
+    margin-top: 20px                                                                                                    ;
+}
