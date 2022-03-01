@@ -1,0 +1,54 @@
+.project-stushare-text {
+    font-family: "SF Pro Medium";
+    font-size: calc(1rem + 0.3vw);
+}
+
+.project-stushare-text a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+#footer-section {
+    background-color: #fff;
+}
+
+#project-stushare-section {
+    padding-top: calc(8.5vw + 100px);
+    padding-left: 10vw;
+    padding-right: 10vw
+}
+
+#project-stushare-title {
+    margin: 0px;
+    padding: 0px
+}
+
+.col-lg {
+    padding: 0px!important;
+    margin-top: 50px;
+}
+
+#project-stushare-img-web, #project-stushare-img-dev {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#project-stushare-txt-1 {
+    margin-right: 40px;
+}
+#project-stushare-txt-2 {
+    margin-left: 40px
+}
+
+@media screen and (max-width: 992px) {
+    #project-stushare-txt-1 {
+        margin: 0px;
+    }
+    #project-stushare-txt-2 {
+        margin: 0px
+    }
+}

@@ -8,3 +8,7 @@ body {
     right: 20px;
     z-index: 1000;
 }
+
+html {
+    scroll-behavior: smooth;
+}

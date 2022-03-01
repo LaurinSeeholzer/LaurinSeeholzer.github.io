@@ -18,3 +18,7 @@
     padding-right: 10vw;
     padding-top: 50px;
 }
+
+#footer-section svg {
+    transform: translateY(10px);
+}
