@@ -13,7 +13,7 @@
     <link href="css/hello.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
+    <link href="css/project-stushare.css" rel="stylesheet">
     <link href="css/onload.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -26,17 +26,17 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="js/onload.js"></script>
 </head>
-<body onload="loaded()">¨
-  <div id="loader-div">
-    <div class="loader">
-      <span></span>
-      <span ></span>
-      <span ></span>
-      <span ></span>
-      <span></span>
-      <span></span>
+<body onload="loaded()">
+    <div id="loader-div">
+        <div class="loader">
+          <span></span>
+          <span ></span>
+          <span ></span>
+          <span ></span>
+          <span></span>
+          <span></span>
+        </div>
     </div>
-  </div>
   <div class="container-fluid" id="nav-div">
     <div class="row">
       <div class="col nav-link-col">
@@ -56,19 +56,31 @@
       </div>
     </div>
   </div>
-  <section id="about-section">
+  <section id="project-stushare-section">
     <div class="container-fluid">
         <div class="row">
-            <h1 id="about-title">Über mich</h1>
+            <h1 id="project-stushare-title">Stushare</h1>
         </div>
         <div class="row">
-            <div class="col">
-                <p id="about-text">Ich bin Laurin Seeholzer, bin 16 Jahre alt und besuche zurzeit die Kantonsschule Reussbühl, Luzern. Seit vor über drei Jahren das Interese für IT in mir geweckt wurde, entwickelte ich manche Webseiten und Apps für Freunde oder Klienten. Durch die Erfahrung aus kleineren Projekten, konnte ich viel lernen, um so Projekte zu realisieren, welche vor einem Jahr vermutlich undenkbar gewesen wäre.<br> Wenn du also eine Idee hast und nach jemandem suchst, der diese Idee verwirklichen kann, bist du punktrichtig! Zusammen kreieren wir was du, deine Firma  und/oder deine Kunden benötigen!</p>
-                <a class="hero-action-a" href="/start">
-                    <button class="hero-action-button" id="hero-action-button-startproject">
-                      <i data-feather="arrow-right"></i>Projekt starten
-                    </button>
-                </a>
+            <div class="col-lg">
+                <p class="project-stushare-text" id="project-stushare-txt-1">
+                    Stushare ist eine web basierte Schulplanungs-Plattform für schweizer Schüler*innen, um ToDo's, Notizen und Aufgeben einzutragen und den Stundenplan einzusehen, um so die Organisation des digitale Schullebens zu erleichtern.
+                    <br>
+                    Die Plattform ist free-to-use und kann unter <a href="https://stushare.app">https://stushare.app</a> genutzt werden.
+                </p>
+            </div>
+            <div class="col-lg">
+                <img id="project-stushare-img-web" src="images/project-stushare-img-web.jpeg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <img id="project-stushare-img-dev" src="images/project-stushare-img-dev.jpg">
+            </div>
+            <div class="col-lg">
+                <p class="project-stushare-text" id="project-stushare-txt-2">
+                    Zur umsetzung des Projekts wurden die Programmiersprachen HTML, CSS und JavaScript zusammen mit dem CSS-Framework Bootstrap für das Frontend verwendet. Um die Plattform auch funktionsfähig zu machen, bediente man sich der Programmiersprache Python zusammen mit der Library Flask im Backend, welche es erlaubt Requests einfach zu empfangen, validieruen/umsetzen und mit der entsprechenden response zu antworten. Als Datenbank wird SQLite 3 genutzt.
+                </p>
             </div>
         </div>
     </div>

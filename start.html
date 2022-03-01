@@ -14,25 +14,43 @@
     <link href="css/projects.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/start.css" rel="stylesheet">
+    <link href="css/onload.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
     <title>Laurin Seeholzer | Freelance Softwareentwickler</title>
 
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/onload.js"></script>
 </head>
-<body>
+<body onload="loaded()">
+  <div id="loader-div">
+    <div class="loader">
+      <span></span>
+      <span ></span>
+      <span ></span>
+      <span ></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <div class="container-fluid" id="nav-div">
     <div class="row">
       <div class="col nav-link-col">
-        <a href="#hello-section">
+        <a href="/">
+          Home
+        </a>
+      </div>
+      <div class="col nav-link-col">
+        <a href="/about">
           About
         </a>
       </div>
       <div class="col nav-link-col">
-        <a href="#projects-section">
-          Projekte
-        </a>
-      </div>
-      <div class="col nav-link-col">
-        <a href="#contact-section">
+        <a href="/#contact-section">
           Kontakt
         </a>
       </div>
@@ -45,14 +63,14 @@
         </div>
         <div class="row">
             <div class="col">
-                <form action="/start" method="post" id="start-form">
+                <form action="https://laurinseeholzer.pythonanywhere.com/" method="post" id="start-form">
                     <div class="form-group">
                       <label for="firstname">Vorname</label> 
                       <input id="firstname" name="firstname" placeholder="Vorname" type="text" class="form-control" required="required">
                     </div>
                     <div class="form-group">
-                      <label for="surname">Nachname</label> 
-                      <input id="surname" name="surname" placeholder="Nachname" type="text" class="form-control" required="required">
+                      <label for="lastname">Nachname</label> 
+                      <input id="lastname" name="lastname" placeholder="Nachname" type="text" class="form-control" required="required">
                     </div>
                     <div class="form-group">
                       <label for="company">Firma (optional)</label> 
