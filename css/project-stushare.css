@@ -35,6 +35,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 1px solid #b8b8b8;
+    border-radius: 10px;
 }
 
 #project-stushare-txt-1 {
