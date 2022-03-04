@@ -28,7 +28,6 @@ function fadeOutOnScroll(element) {
 function scrollHandler() {
 	fadeOutOnScroll(hero);
     fadeOutOnScroll(hello);
-    fadeOutOnScroll(projects);
 }
 
 window.addEventListener('scroll', scrollHandler);
